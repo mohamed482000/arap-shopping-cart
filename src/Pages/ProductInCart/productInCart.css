@@ -1,0 +1,103 @@
+.product-in-cart-page {
+  background-color: #efefef;
+  padding-right: 30px;
+  min-height: 300px;
+}
+.product-in-cart-page .product-header {
+  padding: 20px 0 10px;
+  color: #2c3e50;
+}
+.product-in-cart-page .products-information > div:first-of-type {
+  width: 50%;
+}
+.product-in-cart-page .products-information > div:first-of-type > div {
+  width: 100%;
+}
+.product-in-cart-page .products-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.product-in-cart-page .product-in-cart-wrapper {
+  display: flex;
+  padding: 20px 10px;
+  border-top: 1px solid #c0bdbd;
+}
+.product-in-cart-page .product-in-cart-wrapper .product-image {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 270px;
+  height: 250px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-in-cart-page .product-in-cart-wrapper .product-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.product-in-cart-page .product-in-cart-wrapper .product-info {
+  color: #2c3e50;
+}
+.product-in-cart-page .product-in-cart-wrapper .product-info h3 {
+  margin-bottom: 10px;
+}
+.product-in-cart-page .product-in-cart-wrapper .product-info h4 {
+  margin-bottom: 10px;
+}
+.product-in-cart-page .product-in-cart-wrapper .product-info span {
+  font-size: 20px;
+}
+/* payment container */
+.product-in-cart-page .payment-container {
+  width: 35%;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 7px;
+}
+.product-in-cart-page .payment-container h5 {
+  color: #28a745;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.product-in-cart-page .payment-container h3 {
+  margin-bottom: 8px;
+}
+.product-in-cart-page .payment-container button {
+  width: 100%;
+  background-color: #ffc107;
+  border-radius: 4px;
+  padding: 4px;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media (max-width: 920px) {
+  .product-in-cart-page .products-information {
+    flex-direction: column;
+  }
+  .product-in-cart-page .products-information > div:first-of-type {
+    width: 80%;
+  }
+  .product-in-cart-page .payment-container {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .product-in-cart-page .products-information > div:first-of-type {
+    width: 90%;
+  }
+  .product-in-cart-page .product-in-cart-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-in-cart-page .product-in-cart-wrapper .product-image {
+    margin-bottom: 20px;
+    width: 400px;
+    margin-left: 0;
+  }
+}

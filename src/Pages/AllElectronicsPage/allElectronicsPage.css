@@ -1,0 +1,179 @@
+.all-electronics-page {
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+}
+.all-electronics-page .filters-Container {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #c8c0c0;
+  width: 25%;
+}
+.all-electronics-page .filters-Container > div:first-child {
+  margin-bottom: 20px;
+}
+.all-electronics-page .filters-Container h3 {
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+.all-electronics-page .filters-Container .input-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+.all-electronics-page .filters-Container label {
+  color: #585858;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-right: 3px;
+  font-weight: bold;
+}
+/* electronecs compooo */
+.all-electronics-page .electronics-container {
+  width: 73%;
+}
+.all-electronics-page .all-products {
+  display: flex;
+  justify-content: space-between;
+}
+.all-electronics-page .every-product {
+  width: 290px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 310px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #a3a3a3;
+}
+.all-electronics-page .every-product:hover .product-title {
+  color: blue;
+}
+.all-electronics-page .every-product .product-image {
+  height: 50%;
+}
+.all-electronics-page .every-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.all-electronics-page .every-product .product-title {
+  height: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+.all-electronics-page .every-product h4:nth-child(3) {
+  color: #69a4e6;
+  padding: 10px 0;
+  margin: 30px 0 10px;
+}
+.all-electronics-page .every-product h4:nth-child(3) > span {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0px 4px;
+  margin-left: 10px;
+}
+.all-electronics-page .every-product h4:nth-child(3) span span {
+  background-color: #fff;
+  color: #69a4e6;
+}
+.all-electronics-page .every-product h4:last-of-type {
+  color: #000;
+  font-size: 20px;
+}
+@media (max-width: 1100px) {
+  .all-electronics-page .filters-Container {
+    width: 22%;
+  }
+  .all-electronics-page .electronics-container {
+    width: 75%;
+  }
+}
+@media (max-width: 1000px) {
+  .all-electronics-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+  }
+  .all-electronics-page .filters-Container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .all-electronics-page .electronics-container {
+    width: 100%;
+  }
+}
+@media (max-width: 920px) {
+  .all-electronics-page .all-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .all-electronics-page .every-product {
+    width: 46%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .all-electronics-page .every-product {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+/* pagination  */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 5px 0;
+  color: #000;
+}
+
+.page {
+  border: 1px solid #585858;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.page.previous,
+.page.next {
+  width: max-content;
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+.page.next {
+  border-radius: 7px 0 0 7px;
+}
+
+.page.previous {
+  border-radius: 0 7px 7px 0;
+}
+
+.pagination .active {
+  background-color: rgb(165, 162, 162);
+}
+
+.next:disabled,
+.previous:disabled {
+  cursor: not-allowed;
+}
